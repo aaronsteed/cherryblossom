@@ -1,5 +1,5 @@
 # Cherry Blossom
-<img height="200" src="/Users/aaronsteed/Development/cherryblossom/assets/images/cherry-blossom.jpeg" width="400"/>
+<img height="200" src="./assets/images/cherry-blossom.jpeg" width="400"/>
 
 ## Build Setup
 
