@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .cb-landing-page {
-    background-image: url("@/assets/images/blurry-gradient.png");
+    background-image: url("~/assets/images/blurry-gradient.png");
 }
 
 .vue-typer {
