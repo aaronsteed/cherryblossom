@@ -5,29 +5,27 @@
 
 <img height="200" src="./assets/images/cherry-blossom.jpeg" width="400"/>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
+<!-- TOC -->
+* [Cherry Blossom](#cherry-blossom)
+  * [Setup](#setup)
+  * [Development](#development)
+  * [Production](#production)
+<!-- TOC -->
 ## Setup
 
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
+## Development
 
 Start the development server on `http://localhost:3000`
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 ## Production
@@ -35,7 +33,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn run build
 ```
 
 Locally preview production build:
