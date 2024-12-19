@@ -24,6 +24,9 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.6.7",
+    "vue-component-media-queries": "^1.0.0",
     "vuetify": "^3.7.1"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "version": "0.0.0"
 }
