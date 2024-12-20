@@ -40,7 +40,7 @@
 .timeline-circle {
   position: relative;
   display: flex;
-  background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+  background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
   border-radius: 50%;
   top: 17vh;
   left: -1vh;
@@ -63,7 +63,7 @@
   z-index: 2;
   top: -5vh;
   right: -1vh;
-  background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+  background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
   width: 1vh;
   height: 70vh;
 }
@@ -83,6 +83,3 @@
   /*width: 8vh;*/
   height: 85vh;
 }
-
-
-
