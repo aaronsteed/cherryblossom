@@ -1,10 +1,10 @@
 <template>
   <div>
-    <landing-section roles="Software Engineer 💻"></landing-section>
+    <hero-section roles="Software Engineer 💻"></hero-section>
     <timeline-view></timeline-view>
   </div>
 </template>
 <script setup lang="ts">
-import LandingSection from '~/components/sections/LandingSection.vue'
-import TimelineView from '~/components/sections/TimelineView.vue'
+import HeroSection from '~/components/views/HeroSection.vue'
+import TimelineView from '~/components/views/TimelineView.vue'
 </script>
