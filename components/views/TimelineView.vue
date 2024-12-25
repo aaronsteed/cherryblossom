@@ -1,9 +1,14 @@
 <template>
-  <div class="overflow-hidden bg-cover min-h-screen">
+  <div class="h-fit">
+    <h1
+      class="flex flex-col desktop:text-7xl tablet:text-6xl mobile:text-4xl font-bold text-center justify-center items-center text-black pt-4"
+    >
+      Experience
+    </h1>
     <v-timeline
       v-if="!isSmallScreen"
       truncate-line="both"
-      class="desktop:ml-60 desktop:mr-60 tablet:ml-20 tablet:mr-20 pt-20"
+      class="desktop:ml-60 desktop:mr-60 tablet:ml-20 tablet:mr-20"
     >
       <v-timeline-item
         v-for="pastExperience in pastExperiences"
@@ -16,7 +21,9 @@
           </v-avatar>
         </template>
         <template #opposite>
-          <span>{{ pastExperience.duration }}</span>
+          <span>
+            <b>{{ pastExperience.duration }}</b>
+          </span>
         </template>
         <v-card rounded="500" flat>
           <v-card-item>
@@ -49,7 +56,7 @@
         <v-card rounded="500" flat>
           <v-card-item>
             <v-card-title>{{ experience.company }}</v-card-title>
-            <v-card-subtitle class="font-extrabold" opacity="100">{{
+            <v-card-subtitle style="font-weight-bold" opacity="100">{{
               experience.duration
             }}</v-card-subtitle>
             <v-card-subtitle>{{ experience.role }}</v-card-subtitle>

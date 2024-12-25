@@ -26,11 +26,13 @@
     "nuxt": "^3.14.1592",
     "nuxt-vite": "^0.3.5",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vite-plugin-vuetify": "^2.0.4"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@nuxtjs/tailwindcss": "^6.6.7",
-    "vuetify": "^3.7.1"
+    "vuetify": "^3.7.6"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
