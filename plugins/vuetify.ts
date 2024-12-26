@@ -9,13 +9,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     ssr: true,
     components,
     directives,
-    icons: {
-      defaultSet: 'mdi',
-      aliases,
-      sets: {
-        mdi,
-      },
-    },
   })
 
   nuxtApp.vueApp.use(vuetify)
