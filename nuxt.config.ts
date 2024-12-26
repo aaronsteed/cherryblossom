@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
+    '@nuxt/icon',
     '@vueuse/nuxt',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
@@ -13,7 +14,7 @@ export default defineNuxtConfig({
       })
     },
   ],
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.css', '@mdi/font/css/materialdesignicons.css'],
 
   build: {
     transpile: ['vuetify'],
