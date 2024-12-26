@@ -1,14 +1,14 @@
 <template>
-  <div class="h-fit">
+  <div class="h-screen">
     <h1
-      class="flex flex-col desktop:text-7xl tablet:text-6xl mobile:text-4xl font-bold text-center justify-center items-center text-black pt-4"
+      class="flex flex-col desktop:text-5xl tablet:text-4xl mobile:text-4xl font-bold text-center justify-center items-center text-black pt-10"
     >
       Experience
     </h1>
     <v-timeline
       v-if="!isSmallScreen"
       truncate-line="both"
-      class="desktop:ml-60 desktop:mr-60 tablet:ml-20 tablet:mr-20"
+      class="!desktop:ml-60 !desktop:mr-60 !tablet:ml-20 !tablet:mr-20 pb-20 px-20"
     >
       <v-timeline-item
         v-for="pastExperience in pastExperiences"
