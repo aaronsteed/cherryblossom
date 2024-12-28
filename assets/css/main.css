@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.cb-landing-page {
-  background-image: url('~/assets/images/blurry-gradient.png');
-  background-size: cover;
-}

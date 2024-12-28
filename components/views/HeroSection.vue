@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-w-screen min-h-screen h-screen w-screen cb-landing-page bg-slate-800 pt-20"
+    class="min-w-screen min-h-screen h-screen w-screen hero-landing bg-slate-800 pt-20"
   >
     <div class="flex h-64 flex-row text-5xl justify-center items-center">
       <img
@@ -30,3 +30,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.hero-landing {
+  background-image: url('~/assets/images/blurry-gradient.png');
+  background-size: cover;
+}
+</style>
