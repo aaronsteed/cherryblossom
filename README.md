@@ -11,6 +11,7 @@
 - [Cherry Blossom](#cherry-blossom)
   - [Setup](#setup)
   - [Development](#development)
+    - [Linting](#linting)
   - [Production](#production)
   <!-- TOC -->
 
@@ -19,7 +20,6 @@
 Install the dependencies:
 
 ```bash
-# yarn
 yarn install
 ```
 
@@ -31,6 +31,12 @@ Start the development server on `http://localhost:3000`
 yarn run dev
 ```
 
+### Linting
+
+```bash
+yarn run lintfix
+```
+
 ## Production
 
 Build the application for production:
@@ -38,11 +44,3 @@ Build the application for production:
 ```bash
 yarn run build
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
