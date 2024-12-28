@@ -2,7 +2,7 @@
   <div>
     <v-app>
       <hero-section roles="Software Engineer 💻"></hero-section>
-      <timeline-view></timeline-view>
+      <experience-view></experience-view>
       <projects-view></projects-view>
       <footer-section></footer-section>
     </v-app>
@@ -10,7 +10,7 @@
 </template>
 <script setup lang="ts">
 import HeroSection from '~/components/views/HeroSection.vue'
-import TimelineView from '~/components/views/TimelineView.vue'
+import ExperienceView from '~/components/views/ExperienceView.vue'
 import ProjectsView from '~/components/views/ProjectsView.vue'
 import FooterSection from '~/components/views/FooterSection.vue'
 </script>

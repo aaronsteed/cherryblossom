@@ -6,7 +6,7 @@
     >
       Projects
     </h1>
-    <div v-if="!isSmallScreen" class="flex justify-center space-x-40">
+    <div v-if="!isSmallScreen" class="flex justify-center desktop:space-x-60 tablet:space-x-20">
       <project-card
         github-link="https://github.com/aaronsteed/cherryblossom"
         project-description="Portfolio site you're currently exploring ✨ Made with VueJS, Nuxt and a lot of ❤️"
