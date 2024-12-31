@@ -7,7 +7,7 @@
 ![](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 ![](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-<img height="300" width="600" src="./assets/images/cherry-blossom.jpeg" width="400"/>
+<img height="300" width="600" src="./public/images/cherry-blossom.jpeg" width="400"/>
 
 | Deployment                                                                                                 |
 | ---------------------------------------------------------------------------------------------------------- |
