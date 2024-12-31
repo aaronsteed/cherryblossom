@@ -2,6 +2,11 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    },
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',

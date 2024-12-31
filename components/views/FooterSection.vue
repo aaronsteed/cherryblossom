@@ -28,6 +28,11 @@ export default {
     return {
       socials: [
         {
+          icon: 'pepicons-pop:cv',
+          link: '/documents/2025x-CV.pdf',
+          size: '19',
+        },
+        {
           icon: 'uil:github',
           link: 'https://github.com/aaronsteed',
           size: '20',
