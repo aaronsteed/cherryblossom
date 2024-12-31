@@ -1,12 +1,19 @@
 <template>
-  <div class="pb-20">
+  <div class="pb-20 bg-[#EDF2F4] pt-10">
     <!--    TODO maybe make this a component for all sections (a lot of it is copied in a bunch of places) -->
-    <h1
-      class="flex flex-col desktop:text-5xl tablet:text-4xl mobile:text-4xl font-bold text-center justify-center items-center text-black pt-24 pb-20"
+    <div class="flex justify-center p-2 items-center">
+      <h1
+        id="experience"
+        class="flex w-fit bg-[#2B2D42] p-2 desktop:text-5xl tablet:text-4xl mobile:text-4xl font-bold text-white"
+      >
+        Projects
+      </h1>
+      <div class="pb-56"></div>
+    </div>
+    <div
+      v-if="!isSmallScreen"
+      class="flex justify-center desktop:space-x-60 tablet:space-x-20"
     >
-      Projects
-    </h1>
-    <div v-if="!isSmallScreen" class="flex justify-center desktop:space-x-60 tablet:space-x-20">
       <project-card
         github-link="https://github.com/aaronsteed/cherryblossom"
         project-description="Portfolio site you're currently exploring ✨ Made with VueJS, Nuxt and a lot of ❤️"

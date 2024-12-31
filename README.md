@@ -1,10 +1,17 @@
 # Cherry Blossom
 
+> Portfolio website for Aaron Steed
+
+![](https://img.shields.io/badge/nuxt%20js-00C58E?style=for-the-badge&logo=nuxtdotjs&logoColor=white)
 ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
+![](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-<img height="200" src="./assets/images/cherry-blossom.jpeg" width="400"/>
+<img height="300" width="600" src="./assets/images/cherry-blossom.jpeg" width="400"/>
+
+| Deployment                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------- |
+| ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/cherryblossom-asteed-projects?style=for-the-badge) |
 
 <!-- TOC -->
 
@@ -39,8 +46,4 @@ yarn run lintfix
 
 ## Production
 
-Build the application for production:
-
-```bash
-yarn run build
-```
+Vercel deploys the current latest tag automatically. Should another tag or a revert be needed, contact @aaronsteed

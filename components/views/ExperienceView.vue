@@ -1,75 +1,84 @@
 <template>
-  <div class='h-auto desktop:pl-56 desktop:pr-56'>
-    <h1
-      class='flex flex-col desktop:text-5xl tablet:text-4xl mobile:text-4xl font-bold text-center justify-center items-center text-black pt-10 pb-5'
-     id="experience">
-      Experience
-    </h1>
+  <div class="h-auto desktop:pl-56 desktop:pr-56 bg-[#EDF2F4]">
+    <div class="flex justify-center p-2 items-center">
+      <h1
+        id="experience"
+        class="flex w-fit bg-[#2B2D42] p-2 desktop:text-5xl tablet:text-4xl mobile:text-4xl font-bold text-white"
+      >
+        Experience
+      </h1>
+    </div>
     <v-timeline
-      v-if='!isSmallScreen'
-      truncate-line='both'
-      class='!desktop:ml-60 !desktop:mr-60 !tablet:ml-20 !tablet:mr-20 pb-20 px-20'
+      v-if="!isSmallScreen"
+      truncate-line="both"
+      line-color="#2B2D42"
+      class="!desktop:ml-60 !desktop:mr-60 !tablet:ml-20 !tablet:mr-20 !mobile:px-40 pb-10 px-20"
     >
       <v-timeline-item
-        v-for='pastExperience in pastExperiences'
-        :key='pastExperience.company'
+        v-for="pastExperience in pastExperiences"
+        :key="pastExperience.company"
       >
         <template #icon>
           <v-avatar>
-            <img :src='pastExperience.imageUrl' alt='past experience logo' />
+            <img :src="pastExperience.imageUrl" alt="past experience logo" />
           </v-avatar>
         </template>
         <template #opposite>
-          <span>
+          <div class="bg-[#2B2D42] w-fit text-[#EDF2F4] p-1">
             <b>{{ pastExperience.duration }}</b>
-          </span>
+          </div>
         </template>
-        <v-card rounded='500' flat variant="tonal" class="desktop:w-96 tablet:w-auto pl-52">
+        <v-card
+          rounded="500"
+          flat
+          class="desktop:w-96 tablet:w-auto pl-52 !shadow-md !rounded-xl"
+        >
           <v-card-item>
             <v-card-title>{{ pastExperience.company }}</v-card-title>
             <v-card-subtitle>{{ pastExperience.role }}</v-card-subtitle>
           </v-card-item>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto assumenda autem consequuntur cumque delectus eius esse est exercitationem incidunt iure magnam mollitia, neque non odio omnis porro quo sint, unde, voluptatem! Commodi laudantium magnam possimus quam sint, suscipit voluptate? Accusamus at dolor doloremque enim illo itaque quod! Ad animi deleniti eligendi quae quaerat repudiandae!
+          <v-card-text class="whitespace-pre-line">
+            {{ pastExperience.description }}
           </v-card-text>
         </v-card>
       </v-timeline-item>
     </v-timeline>
     <v-timeline
-      v-if='isSmallScreen'
-      side='end'
-      truncate-line='both'
-      class='mobile:ml-2 mobile:mr-2 pt-10'
+      v-if="isSmallScreen"
+      side="end"
+      line-color="#2B2D42"
+      truncate-line="both"
+      class="mobile:ml-2 mobile:mr-2 pt-10 pr-10"
     >
       <v-timeline-item
-        v-for='experience in pastExperiences'
-        :key='experience.company'
-        size='small'
+        v-for="experience in pastExperiences"
+        :key="experience.company"
+        size="small"
       >
         <template #icon>
           <v-avatar>
-            <img :src='experience.imageUrl' alt='past experience logo' />
+            <img :src="experience.imageUrl" alt="past experience logo" />
           </v-avatar>
         </template>
-        <v-card rounded='500' flat>
+        <v-card rounded="500" flat class="!shadow-md !rounded-xl">
           <v-card-item>
             <v-card-title>{{ experience.company }}</v-card-title>
-            <v-card-subtitle class='!font-weight-bold' opacity='100'>{{
-                experience.duration
-              }}
+            <v-card-subtitle opacity="100"
+              >{{ experience.duration }}
             </v-card-subtitle>
-            <v-card-subtitle>{{ experience.role }}</v-card-subtitle>
+            <v-card-subtitle class="!font-bold !opacity-100">{{
+              experience.role
+            }}</v-card-subtitle>
           </v-card-item>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-            beatae dolorum labore nulla quia velit voluptatum!
+          <v-card-text class="whitespace-pre-line">
+            {{ experience.description }}
           </v-card-text>
         </v-card>
       </v-timeline-item>
     </v-timeline>
   </div>
 </template>
-<script lang='ts'>
+<script lang="ts">
 import { useMediaQuery } from '@vueuse/core'
 
 export default {
@@ -77,7 +86,7 @@ export default {
   setup() {
     const isSmallScreen = useMediaQuery('(max-width: 800px)')
     return {
-      isSmallScreen
+      isSmallScreen,
     }
   },
   data() {
@@ -87,25 +96,28 @@ export default {
           company: 'Dublin City University',
           role: 'BSc. Computer Science',
           duration: '2013 - 2017',
-          imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMb4zu_cn-CYfiB9PPepXTDr7Td7yd0Vxb1NQpuZD8OS_1hJ5AandLT9XaW815sls4cbU&usqp=CAU'
+          description:
+            'The university where I learned my craft. My final year project was a device and system I created to detect head trauma and concussions in sport.\n\nBuilt using an Arduino which had an accelerometer and GSM modem, with the algorithm taking a lot of inspiration from formal white papers describing similar devices built for fall detection of the elderly.',
+          imageUrl: '/images/DCU.png',
         },
         {
           company: 'Cellusys',
           role: 'Software Engineer → Senior Software Engineer',
           duration: '2017 - 2021',
-          imageUrl:
-            'https://media.licdn.com/dms/image/v2/C4E0BAQH184tAMLoq7Q/company-logo_200_200/company-logo_200_200/0/1651133802227?e=2147483647&v=beta&t=FAkKK0VOKc2fdkzuRQiPlQ3Blvuu2D-_fzELN6ZsF6g'
+          description:
+            'Developing features alongside my peers on their Signalling Firewall product, which enabled Mobile Networks to secure their subscribers from malicious attacks.\n\nNotable contributions including adding multitenancy to the product from the ground up, changing the underlying engine to a rule based engine which built a lot of flexibility into a system which required it for an ever evolving problem space and creating low level encoders for SIP (VoIP), 4G and 5G.',
+          imageUrl: '/images/Cellusys.jpeg',
         },
         {
           company: 'Riot Games',
           role: 'Software Engineer → Senior Software Engineer',
           duration: '2021 - Present',
-          imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGvRhdg1vaZyhkn5zzE7p35e70SUgv0TVCw&s'
-        }
-      ]
+          description:
+            "Initially joined Riot Games' Production Engineering team where I actively contributed to a multi year project to migrate the legacy observability platform to a solution more in line with industry standards as we moved vendors. The main motivation of the project being to work towards an ever maturing observability pipeline which is vendor-agnostic, cost-effective and sustainable.\n\nNow I currently work on the Content Access Platform (CAP), creating game agnostic content and monetization systems for all of Riot's titles.",
+          imageUrl: '/images/Riot.png',
+        },
+      ],
     }
-  }
+  },
 }
 </script>

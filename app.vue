@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app>
-      <hero-section roles="Software Engineer 💻"></hero-section>
+      <hero-section roles="Software Engineer."></hero-section>
       <experience-view></experience-view>
       <projects-view></projects-view>
       <footer-section></footer-section>
