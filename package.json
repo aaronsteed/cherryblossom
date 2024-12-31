@@ -1,7 +1,6 @@
 {
   "name": "cherry-blossom",
   "version": "0.1.0-alpha",
-  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
