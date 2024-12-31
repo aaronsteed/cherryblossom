@@ -18,7 +18,8 @@
 
     <v-divider inset color="#00000"></v-divider>
 
-    <div class="p-5 !font-extralight">Made with ❤️ by Aaron Steed</div>
+    <div class="pt-5 !font-extralight">Made with ❤️ by Aaron Steed</div>
+    <div class='p-0.5 !font-extralight text-xs'><a class='!font-extralight text-xs hover:text-black' href='https://github.com/aaronsteed/cherryblossom'>{{ appVersion }}</a></div>
   </v-footer>
 </template>
 
@@ -54,6 +55,12 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    appVersion() {
+      const runtimeConfig = useRuntimeConfig()
+      return runtimeConfig.appVersion;
+    },
   },
 }
 </script>
