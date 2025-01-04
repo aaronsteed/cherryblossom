@@ -12,7 +12,7 @@
       v-if="!isSmallScreen"
       truncate-line="both"
       line-color="#2B2D42"
-      class="!desktop:ml-60 !desktop:mr-60 !tablet:ml-20 !tablet:mr-20 !mobile:px-40 pb-10 px-20"
+      class="!desktop:ml-60 !desktop:mr-60 !tablet:ml-20 !tablet:mr-20 !mobile:px-40 pt-10 pb-10 px-20"
     >
       <v-timeline-item
         v-for="pastExperience in pastExperiences"
@@ -31,7 +31,7 @@
         <v-card
           rounded="500"
           flat
-          class="desktop:w-96 tablet:w-auto pl-52 !shadow-md !rounded-xl"
+          class="desktop:w-96 tablet:w-auto pl-52 !shadow-md !rounded-xl !border-4 !border-[#2B2D42]"
         >
           <v-card-item>
             <v-card-title>{{ pastExperience.company }}</v-card-title>
@@ -93,12 +93,12 @@ export default {
     return {
       pastExperiences: [
         {
-          company: 'Dublin City University',
-          role: 'BSc. Computer Science',
-          duration: '2013 - 2017',
+          company: 'Riot Games',
+          role: 'Software Engineer → Senior Software Engineer',
+          duration: '2021 - Present',
           description:
-            'The university where I learned my craft. My final year project was a device and system I created to detect head trauma and concussions in sport.\n\nBuilt using an Arduino which had an accelerometer and GSM modem, with the algorithm taking a lot of inspiration from formal white papers describing similar devices built for fall detection of the elderly.',
-          imageUrl: '/images/DCU.png',
+            "Initially joined Riot Games' Production Engineering team where I actively contributed to a multi year project to migrate the legacy observability platform to a solution more in line with industry standards as we moved vendors. The main motivation of the project being to work towards an ever maturing observability pipeline which is vendor-agnostic, cost-effective and sustainable.\n\nNow I currently work on the Content Access Platform (CAP), creating game agnostic content and monetization systems for all of Riot's titles.",
+          imageUrl: '/images/Riot.png',
         },
         {
           company: 'Cellusys',
@@ -109,13 +109,13 @@ export default {
           imageUrl: '/images/Cellusys.jpeg',
         },
         {
-          company: 'Riot Games',
-          role: 'Software Engineer → Senior Software Engineer',
-          duration: '2021 - Present',
+          company: 'Dublin City University',
+          role: 'BSc. Computer Science',
+          duration: '2013 - 2017',
           description:
-            "Initially joined Riot Games' Production Engineering team where I actively contributed to a multi year project to migrate the legacy observability platform to a solution more in line with industry standards as we moved vendors. The main motivation of the project being to work towards an ever maturing observability pipeline which is vendor-agnostic, cost-effective and sustainable.\n\nNow I currently work on the Content Access Platform (CAP), creating game agnostic content and monetization systems for all of Riot's titles.",
-          imageUrl: '/images/Riot.png',
-        },
+            'The university where I learned my craft. My final year project was a device and system I created to detect head trauma and concussions in sport.\n\nBuilt using an Arduino which had an accelerometer and GSM modem, with the algorithm taking a lot of inspiration from formal white papers describing similar devices built for fall detection of the elderly.',
+          imageUrl: '/images/DCU.png',
+        }
       ],
     }
   },

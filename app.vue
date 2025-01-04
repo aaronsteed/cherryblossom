@@ -14,8 +14,8 @@ import ExperienceView from '~/components/views/ExperienceView.vue'
 import ProjectsView from '~/components/views/ProjectsView.vue'
 import FooterSection from '~/components/views/FooterSection.vue'
 useSeoMeta({
-  title: 'Aaron Steed (aaronsteed.io)',
-  ogTitle: 'Aaron Steed (aaronsteed.io)',
+  title: 'Aaron Steed',
+  ogTitle: 'Aaron Steed',
   ogUrl: 'https://aaronsteed.io',
   description: "Aaron Steed's Portfolio Site",
   ogDescription: "Aaron Steed's Portfolio Site",
