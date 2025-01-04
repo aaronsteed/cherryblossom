@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
-import { version } from './package.json';
+import { version } from './package.json'
 
 export default defineNuxtConfig({
   runtimeConfig: {
