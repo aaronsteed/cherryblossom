@@ -8,12 +8,12 @@
     ></div>
     <div class="p-6 h-3/6">
       <h5
-        class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+        class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
       >
         {{ projectName }}
       </h5>
       <p
-        class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+        class="block text-sm font-light leading-relaxed text-inherit antialiased"
       >
         {{ projectDescription }}
       </p>

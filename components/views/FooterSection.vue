@@ -18,11 +18,14 @@
 
     <v-divider inset color="#00000"></v-divider>
 
-    <div class="pt-5 !font-extralight">Made with ❤️ by Aaron Steed</div>
+    <div class="pt-2 !font-extralight text-sm">Made with ❤️ by Aaron Steed</div>
     <div class="p-0.5 !font-extralight text-xs">
       v<a
         class="!font-extralight text-xs hover:text-black"
-        href="https://github.com/aaronsteed/cherryblossom/"
+        :href="
+          'https://github.com/aaronsteed/cherryblossom/releases/tag/v' +
+          appVersion
+        "
         >{{ appVersion }}</a
       >
     </div>
@@ -31,6 +34,13 @@
 
 <script lang="ts">
 export default {
+  setup() {
+    const runtimeConfig = useRuntimeConfig()
+    const appVersion = runtimeConfig.public.appVersion
+    return {
+      appVersion,
+    }
+  },
   data() {
     return {
       socials: [
@@ -61,12 +71,6 @@ export default {
         },
       ],
     }
-  },
-  computed: {
-    appVersion() {
-      const runtimeConfig = useRuntimeConfig()
-      return runtimeConfig.appVersion
-    },
   },
 }
 </script>

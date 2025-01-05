@@ -16,14 +16,14 @@
     >
       <project-card
         github-link="https://github.com/aaronsteed/cherryblossom"
-        project-description="Portfolio site you're currently exploring ✨ Made with VueJS, Nuxt and a lot of ❤️"
+        project-description="Portfolio site you're currently exploring ✨ Made with VueJS, Nuxt and a lot of ❤️. Take a peek at the source if you're curious"
         project-name="Cherry Blossom"
         icon="cherry-blossom.jpeg"
       >
       </project-card>
       <project-card
         github-link="https://github.com/aaronsteed/technitium-dns-kube-controller"
-        project-description="Kubernetes controller to create DNS records in Technitium DNS using Custom Resource Definitions"
+        project-description="Kubernetes controller to create DNS records in Technitium DNS using native Kubernetes ConfigMap definitions"
         project-name="Technitium DNS Kubernetes Controller"
         icon="kubernetes.jpg"
       >

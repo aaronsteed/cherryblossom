@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="!font-default">
     <v-app>
       <hero-section roles="Software Engineer."></hero-section>
       <experience-view></experience-view>

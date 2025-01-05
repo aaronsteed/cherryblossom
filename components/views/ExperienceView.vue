@@ -31,11 +31,13 @@
         <v-card
           rounded="500"
           flat
-          class="desktop:w-96 tablet:w-auto pl-52 !shadow-md !rounded-xl !border-4 !border-[#2B2D42]"
+          class="desktop:w-96 tablet:w-auto pl-52 !shadow-md !rounded-xl"
         >
           <v-card-item>
             <v-card-title>{{ pastExperience.company }}</v-card-title>
-            <v-card-subtitle>{{ pastExperience.role }}</v-card-subtitle>
+            <v-card-subtitle class="!text-xs">{{
+              pastExperience.role
+            }}</v-card-subtitle>
           </v-card-item>
           <v-card-text class="whitespace-pre-line">
             {{ pastExperience.description }}
@@ -66,7 +68,7 @@
             <v-card-subtitle opacity="100"
               >{{ experience.duration }}
             </v-card-subtitle>
-            <v-card-subtitle class="!font-bold !opacity-100">{{
+            <v-card-subtitle class="!text-xs">{{
               experience.role
             }}</v-card-subtitle>
           </v-card-item>
@@ -97,7 +99,7 @@ export default {
           role: 'Software Engineer → Senior Software Engineer',
           duration: '2021 - Present',
           description:
-            "Initially joined Riot Games' Production Engineering team where I actively contributed to a multi year project to migrate the legacy observability platform to a solution more in line with industry standards as we moved vendors. The main motivation of the project being to work towards an ever maturing observability pipeline which is vendor-agnostic, cost-effective and sustainable.\n\nNow I currently work on the Content Access Platform (CAP), creating game agnostic content and monetization systems for all of Riot's titles.",
+            "Initially joined Riot Games' Production Engineering team where I actively contributed to a multi year project to migrate the legacy observability platform to a solution more in line with industry standards as we moved vendors. The main motivation of the project being to work towards an ever maturing observability pipeline which is vendor-agnostic, cost-effective and sustainable.\n\nNow I currently work on the Content Access Platform (CAP), creating game agnostic content and monetization systems for all of Riot's titles; League of Legends, Teamfight Tactics, VALORANT, 2XKO & Legends of Runeterra.",
           imageUrl: '/images/Riot.png',
         },
         {
@@ -115,7 +117,7 @@ export default {
           description:
             'The university where I learned my craft. My final year project was a device and system I created to detect head trauma and concussions in sport.\n\nBuilt using an Arduino which had an accelerometer and GSM modem, with the algorithm taking a lot of inspiration from formal white papers describing similar devices built for fall detection of the elderly.',
           imageUrl: '/images/DCU.png',
-        }
+        },
       ],
     }
   },
