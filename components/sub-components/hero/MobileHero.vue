@@ -43,17 +43,18 @@
 </template>
 <script lang="ts">
 import { useMediaQuery } from '@vueuse/core'
-import { onMounted, ref } from 'vue'
+import { onMounted, type PropType, ref } from 'vue'
 import HeroBlurb from '~/components/sub-components/hero/HeroBlurb.vue'
 
 export default {
   components: { HeroBlurb },
-  setup() {
-    const heroData = {
-      tagLine: "Hi!👋 I'm Aaron Steed.",
-      role: 'Software Engineer.',
-    }
-
+  props: {
+    heroData: {
+      type: Object as PropType<HeroData>,
+      required: true,
+    },
+  },
+  setup(props) {
     let isSmallScreen = useMediaQuery('(max-width: 800px)')
     onMounted(() => {
       isSmallScreen = useMediaQuery('(max-width: 800px)')
@@ -67,7 +68,7 @@ export default {
     return {
       isSmallScreen,
       isLoading,
-      heroData,
+      props,
       handleImageLoad,
     }
   },

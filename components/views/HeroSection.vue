@@ -2,8 +2,11 @@
   <div class="min-w-screen min-h-screen h-screen w-screen bg-[#EDF2F4]">
     <div class="desktop:px-40 px-5">
       <client-only>
-        <desktop-hero v-if="!isSmallScreen"></desktop-hero>
-        <mobile-hero v-if="isSmallScreen"></mobile-hero>
+        <desktop-hero
+          v-if="!isSmallScreen"
+          :hero-data="heroData"
+        ></desktop-hero>
+        <mobile-hero v-if="isSmallScreen" :hero-data="heroData"></mobile-hero>
       </client-only>
     </div>
   </div>
@@ -19,6 +22,10 @@ export default {
   components: { MobileHero, DesktopHero },
   setup() {
     let isSmallScreen = useMediaQuery('(max-width: 800px)')
+    const heroData = {
+      tagLine: "Hi!👋 I'm Aaron Steed.",
+      role: 'Software Engineer',
+    }
     onMounted(() => {
       isSmallScreen = useMediaQuery('(max-width: 800px)')
     })
@@ -31,6 +38,7 @@ export default {
     return {
       isSmallScreen,
       isLoading,
+      heroData,
       handleImageLoad,
     }
   },
