@@ -45,7 +45,7 @@ export default {
       {
         name: 'Cherry Blossom',
         description:
-          "Portfolio site you're currently exploring ✨Take a peak at the code if you're interested",
+          "Portfolio site you're currently exploring ✨ Made with VueJS, Typescript, NuxtJS, some libraries and a lot of ❤️. Take a peek at the source if you're curious",
         githubLink: 'https://github.com/aaronsteed/cherryblossom',
         image: 'cherry-blossom.jpeg',
         imageAlt: 'Cherry Blossom image',

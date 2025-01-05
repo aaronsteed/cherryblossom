@@ -24,7 +24,7 @@ export default {
     let isSmallScreen = useMediaQuery('(max-width: 800px)')
     const heroData = {
       tagLine: "Hi!👋 I'm Aaron Steed.",
-      role: 'Software Engineer',
+      role: 'Software Engineer.',
     }
     onMounted(() => {
       isSmallScreen = useMediaQuery('(max-width: 800px)')
