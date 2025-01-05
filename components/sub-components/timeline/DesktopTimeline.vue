@@ -29,7 +29,8 @@
             experience.role
           }}</v-card-subtitle>
         </v-card-item>
-        <v-card-text class="whitespace-pre-line">
+        <v-card-text
+          class="whitespace-pre-line" >
           {{ experience.description }}
         </v-card-text>
       </v-card>

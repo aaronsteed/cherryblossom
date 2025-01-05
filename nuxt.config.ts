@@ -21,7 +21,9 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/icon',
     '@nuxt/image',
+    '@hypernym/nuxt-anime',
     '@vueuse/nuxt',
+    'v-gsap-nuxt',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error
@@ -33,6 +35,13 @@ export default defineNuxtConfig({
 
   build: {
     transpile: ['vuetify'],
+  },
+
+  vgsap: {
+    presets: [],
+    breakpoint: 768,
+    scroller: '',
+    composable: true
   },
 
   compatibilityDate: '2024-12-19',
