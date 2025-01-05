@@ -18,7 +18,11 @@
 
     <v-divider inset color="#00000"></v-divider>
 
-    <div class="pt-2 !font-extralight text-sm">Made with ❤️ by Aaron Steed</div>
+    <div class="pt-2 !font-extralight text-sm flex flex-row">
+      Made with
+      <NuxtImg src="/images/pixel-heart.png" class="h-4 w-4 mx-2"></NuxtImg>
+      by Aaron Steed
+    </div>
     <div class="p-0.5 !font-extralight text-xs">
       v<a
         class="!font-extralight text-xs hover:text-black"
