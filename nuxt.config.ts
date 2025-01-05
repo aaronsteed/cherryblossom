@@ -4,17 +4,23 @@ import { version } from './package.json'
 
 export default defineNuxtConfig({
   runtimeConfig: {
-    appVersion: version,
+    public: {
+      appVersion: version,
+    },
   },
   app: {
     head: {
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     },
   },
+  image: {
+    // Options
+  },
   modules: [
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
+    '@nuxt/ui',
     '@nuxt/icon',
+    '@nuxt/image',
     '@vueuse/nuxt',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {

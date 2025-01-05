@@ -13,6 +13,8 @@
     "lintfix": "eslint . --fix && prettier --write --list-different ."
   },
   "devDependencies": {
+    "@nuxt/image": "1.8.1",
+    "@nuxt/ui": "2.20.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.0.2",
     "@types/node": "^18",
