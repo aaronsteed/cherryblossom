@@ -5,6 +5,14 @@
       <experience-view></experience-view>
       <projects-view></projects-view>
       <footer-section></footer-section>
+      <dev-only>
+        <a
+          class="hidden desktop:block fixed bottom-0 right-0 m-2 z-10 bg-blue-500 text-white p-2 rounded shadow-lg cursor-pointer"
+          href="https://github.com/aaronsteed/cherryblossom"
+        >
+          Development Preview
+        </a>
+      </dev-only>
     </v-app>
   </div>
 </template>

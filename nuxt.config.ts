@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     presets: [],
     breakpoint: 768,
     scroller: '',
-    composable: true
+    composable: true,
   },
 
   compatibilityDate: '2024-12-19',

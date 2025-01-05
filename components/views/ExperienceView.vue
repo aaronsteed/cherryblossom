@@ -1,7 +1,6 @@
 <template>
   <div class="h-auto desktop:pl-56 desktop:pr-56 bg-[#EDF2F4]">
-    <div
-      class="flex justify-center p-2 items-center">
+    <div class="flex justify-center p-2 items-center">
       <h1
         id="experience"
         class="flex w-fit bg-[#2B2D42] p-2 desktop:text-5xl tablet:text-4xl mobile:text-4xl font-bold text-white"
