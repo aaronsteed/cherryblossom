@@ -1,15 +1,5 @@
 <template>
   <div class="min-w-screen min-h-screen h-screen w-screen bg-[#EDF2F4]">
-    <!--    <div-->
-    <!--      v-gsap.parallax.faster-20-->
-    <!--      class='flex flex-row space-x-28 m-40'>-->
-    <!--      <div-->
-    <!--        class='h-64 w-32 block bg-red-400 rounded-full'></div>-->
-    <!--      <div-->
-    <!--        class='h-64 w-32 block bg-blue-400 rounded-full'></div>-->
-    <!--      <div-->
-    <!--        class='h-64 w-32 block bg-green-400 rounded-full'></div>-->
-    <!--    </div>-->
     <div class="desktop:px-40 px-5">
       <client-only>
         <desktop-hero
