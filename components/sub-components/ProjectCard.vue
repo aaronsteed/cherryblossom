@@ -4,18 +4,21 @@
   >
     <div
       class="mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg"
-      :style="{ backgroundImage: `url('${image}')`, backgroundSize: 'cover' }"
+      :style="{
+        backgroundImage: `url('/images/${project.image}')`,
+        backgroundSize: 'cover',
+      }"
     ></div>
     <div class="p-6 h-3/6">
       <h5
         class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
       >
-        {{ projectName }}
+        {{ project.name }}
       </h5>
       <p
         class="block text-sm font-light leading-relaxed text-inherit antialiased"
       >
-        {{ projectDescription }}
+        {{ project.description }}
       </p>
     </div>
     <div class="p-6 pt-0">
@@ -33,35 +36,31 @@
 </template>
 
 <script lang="ts">
+import type { PropType } from 'vue'
+
+interface Project {
+  name: string
+  description: string
+  githubLink: string
+  image: string
+  imageAlt: string
+}
+
 export default {
-  name: 'ProjectCard',
   props: {
-    projectName: {
-      type: String,
+    project: {
+      type: Object as PropType<Project>,
       required: true,
-      default: () => '',
-    },
-    projectDescription: {
-      type: String,
-      required: true,
-      default: () => '',
-    },
-    githubLink: {
-      type: String,
-      required: true,
-      default: () => '',
-    },
-    icon: {
-      type: String,
-      required: true,
-      default: () => '',
     },
   },
   setup(props) {
     function clicked(_: Event) {
-      open(props.githubLink, '_blank')
+      open(props.project.githubLink, '_blank')
     }
-    return { clicked, image: `/images/${props.icon}` }
+    return {
+      clicked,
+      props,
+    }
   },
 }
 </script>
