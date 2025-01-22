@@ -31,7 +31,7 @@ export default {
       {
         company: 'Riot Games',
         role: 'Software Engineer → Senior Software Engineer',
-        duration: '2021 - Present',
+        duration: '2021 → Present',
         description:
           "Initially joined Riot Games' Production Engineering team where I actively contributed to a multi year project to migrate the legacy observability platform to a solution more in line with industry standards as we moved vendors. The main motivation of the project being to work towards an ever maturing observability pipeline which is vendor-agnostic, cost-effective and sustainable.\n\nNow I currently work on the Content Access Platform (CAP), creating game agnostic content and monetization systems for all of Riot's titles; League of Legends, Teamfight Tactics, VALORANT, 2XKO & Legends of Runeterra.",
         imageUrl: '/images/Riot.png',
@@ -40,7 +40,7 @@ export default {
       {
         company: 'Cellusys',
         role: 'Software Engineer → Senior Software Engineer',
-        duration: '2017 - 2021',
+        duration: '2017 → 2021',
         description:
           'Developing features alongside my peers on their Signalling Firewall product, which enabled Mobile Networks to secure their subscribers from malicious attacks.\n\nNotable contributions including adding multitenancy to the product from the ground up, changing the underlying engine to a rule based engine which built a lot of flexibility into a system which required it for an ever evolving problem space and creating low level encoders for SIP (VoIP), 4G and 5G.',
         imageUrl: '/images/Cellusys.jpeg',
@@ -49,7 +49,7 @@ export default {
       {
         company: 'Dublin City University',
         role: 'BSc. Computer Science',
-        duration: '2013 - 2017',
+        duration: '2013 → 2017',
         description:
           'The university where I learned my craft. My final year project was a device and system I created to detect head trauma and concussions in sport.\n\nBuilt using an Arduino which had an accelerometer and GSM modem, with the algorithm taking a lot of inspiration from formal white papers describing similar devices built for fall detection of the elderly.',
         imageUrl: '/images/DCU.png',

@@ -5,14 +5,7 @@
       <experience-view></experience-view>
       <projects-view></projects-view>
       <footer-section></footer-section>
-      <dev-only>
-        <a
-          class="hidden desktop:block fixed bottom-0 right-0 m-2 z-10 bg-blue-500 text-white p-2 rounded shadow-lg cursor-pointer"
-          href="https://github.com/aaronsteed/cherryblossom"
-        >
-          Development Preview
-        </a>
-      </dev-only>
+      <dev-preview-button></dev-preview-button>
     </v-app>
   </div>
 </template>
@@ -21,6 +14,7 @@ import HeroSection from '~/components/views/HeroSection.vue'
 import ExperienceView from '~/components/views/ExperienceView.vue'
 import ProjectsView from '~/components/views/ProjectsView.vue'
 import FooterSection from '~/components/views/FooterSection.vue'
+import DevPreviewButton from '~/components/views/DevPreviewButton.vue'
 useSeoMeta({
   title: 'Aaron Steed',
   ogTitle: 'Aaron Steed',

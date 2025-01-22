@@ -38,8 +38,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 interface Experience {
   description: string
   duration: string

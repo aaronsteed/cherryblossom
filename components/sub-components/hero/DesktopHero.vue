@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-screen flex items-center w-full">
+    <div id="blah" class="h-screen flex items-center w-full">
       <div class="flex h-auto flex-row text-5xl w-full">
         <NuxtImg
           v-show="!isLoading"
@@ -15,7 +15,7 @@
           :ui="{ rounded: 'rounded-full' }"
         />
         <div
-          class="desktop:text-5xl h-auto tablet:text-4xl mobile:text-2xl font-bold w-full"
+          class="desktop:text-5xl h-auto tablet:text-4xl mobile:text-2xl font-bold w-full flex flex-col space-y-5"
         >
           <h1
             v-if="!isLoading"
@@ -26,16 +26,16 @@
             {{ heroData.tagLine }}
           </h1>
           <USkeleton v-show="isLoading" class="block p-4 h-20 w-full" />
-          <div class="p-2"></div>
-          <h1
-            v-show="!isLoading"
-            id="role"
-            class="bg-[#2B2D42] desktop:text-4xl tablet:text-3xl mobile:text-2xl p-4 text-[#EF233C] w-4/6 shadow-lg"
-          >
-            {{ heroData.role }}
-          </h1>
-          <USkeleton v-show="isLoading" class="block p-4 h-20 w-4/6" />
-          <div class="p-2"></div>
+          <div class="flex flex-row space-x-2">
+            <h1
+              v-show="!isLoading"
+              id="role"
+              class="bg-[#2B2D42] desktop:text-4xl tablet:text-3xl mobile:text-2xl p-4 text-[#EF233C] w-4/6 shadow-lg"
+            >
+              {{ heroData.role }}
+            </h1>
+            <USkeleton v-show="isLoading" class="block p-4 h-20 w-4/6" />
+          </div>
           <div>
             <hero-blurb v-show="!isLoading" id="blurb"></hero-blurb>
             <USkeleton v-show="isLoading" class="block p-4 h-32 w-6/12" />
@@ -67,7 +67,6 @@ export default {
   },
   setup(props) {
     const { $anime } = useNuxtApp()
-
     const taglineEl = ref(null)
     const animateOnlyOnce = ref(false)
     const isTagLineVisible = useElementVisibility(taglineEl)
@@ -94,7 +93,7 @@ export default {
         })
           .add({
             targets: '#role',
-            translateX: 250,
+            translateX: 350,
             direction: 'reverse',
           })
           .add({
