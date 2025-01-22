@@ -16,16 +16,19 @@
       </a>
     </div>
 
-    <v-divider inset color="#00000"></v-divider>
-
-    <div class="pt-2 !font-extralight text-sm flex flex-row">
+    <div
+      class="mt-2 !font-extralight text-xs text-slate-500 flex flex-row align-middle"
+    >
       Made with
-      <NuxtImg src="/images/pixel-heart.png" class="h-4 w-4 mx-2"></NuxtImg>
+      <NuxtImg
+        src="/images/pixel-heart.png"
+        class="h-3 w-3 mt-[1px] mx-1"
+      ></NuxtImg>
       by Aaron Steed
     </div>
     <div class="p-0.5 !font-extralight text-xs">
       v<a
-        class="!font-extralight text-xs hover:text-black"
+        class="!font-extralight text-xs text-slate-500 hover:text-black"
         :href="
           'https://github.com/aaronsteed/cherryblossom/releases/tag/v' +
           appVersion
