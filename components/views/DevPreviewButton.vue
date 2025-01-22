@@ -11,7 +11,7 @@
               @click="
                 () =>
                   window.open(
-                    'https://github.com/aaronsteed/cherryblossomd',
+                    'https://github.com/aaronsteed/cherryblossom',
                     '_blank'
                   )
               "
