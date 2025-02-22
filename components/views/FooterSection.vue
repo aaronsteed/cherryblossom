@@ -57,6 +57,11 @@ export default {
           size: '19',
         },
         {
+          icon: 'material-symbols:mail-outline-rounded',
+          link: 'mailto:asteed7@gmail.com',
+          size: '20',
+        },
+        {
           icon: 'uil:github',
           link: 'https://github.com/aaronsteed',
           size: '20',

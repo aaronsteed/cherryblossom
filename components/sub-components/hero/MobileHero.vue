@@ -18,9 +18,11 @@
       <div class="mobile:text-2xl font-bold">
         <h1
           v-show="!isLoading"
-          class="bg-[#2B2D42] p-4 text-[#EDF2F4] mobile:w-11/12"
+          class="bg-[#2B2D42] p-4 text-[#EDF2F4] mobile:w-11/12 flex flex-row"
         >
-          {{ heroData.tagLine }}
+          Hi!
+          <NuxtImg src="/images/wave-emoji.png" class="h-8 w-8 mx-2"></NuxtImg>
+          I'm Aaron Steed.
         </h1>
         <USkeleton v-show="isLoading" class="block p-4 h-16 w-11/12" />
         <div class="p-2"></div>
@@ -45,6 +47,10 @@
 import { useMediaQuery } from '@vueuse/core'
 import { onMounted, type PropType, ref } from 'vue'
 import HeroBlurb from '~/components/sub-components/hero/HeroBlurb.vue'
+
+interface HeroData {
+  role: string
+}
 
 export default {
   components: { HeroBlurb },

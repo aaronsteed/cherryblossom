@@ -15,15 +15,20 @@
           :ui="{ rounded: 'rounded-full' }"
         />
         <div
-          class="desktop:text-5xl h-auto tablet:text-4xl mobile:text-2xl font-bold w-full flex flex-col space-y-5"
+          class="desktop:text-5xl h-auto tablet:text-5xl mobile:text-2xl font-bold w-full flex flex-col space-y-5"
         >
           <h1
             v-if="!isLoading"
             id="tagline"
             ref="taglineEl"
-            class="bg-[#2B2D42] p-4 text-[#EDF2F4] shadow-lg"
+            class="bg-[#2B2D42] p-4 text-[#EDF2F4] shadow-lg flex flex-row"
           >
-            {{ heroData.tagLine }}
+            Hi!
+            <NuxtImg
+              src="/images/wave-emoji.png"
+              class="h-12 w-12 mx-3 inline"
+            ></NuxtImg>
+            I'm Aaron Steed.
           </h1>
           <USkeleton v-show="isLoading" class="block p-4 h-20 w-full" />
           <div class="flex flex-row space-x-2">
@@ -53,7 +58,6 @@ import type { PropType } from 'vue'
 import HeroBlurb from '~/components/sub-components/hero/HeroBlurb.vue'
 
 interface HeroData {
-  tagLine: string
   role: string
 }
 
@@ -79,6 +83,7 @@ export default {
     function handleImageLoad() {
       isLoading.value = false
     }
+
     watch([isTagLineVisible, animateOnlyOnce], ([isVisible, animateOnce]) => {
       if (isVisible && !animateOnce) {
         const tl = $anime.timeline({
