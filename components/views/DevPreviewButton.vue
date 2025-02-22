@@ -24,6 +24,15 @@
               Design Mode: {{ designMode }}
             </button>
           </li>
+          <li class="p-3 bg-slate-700 shadow-md text-white hover:text-red-500">
+            <button
+              @click="
+                () => window.open('http://localhost:3000/_tailwind/', '_blank')
+              "
+            >
+              Tailwind Config Viewer
+            </button>
+          </li>
         </ul>
         <button
           class="w-52 desktop:block fixed bottom-0 right-0 m-2 mt-4 bg-blue-500 text-white p-2 rounded shadow-md hover:shadow-lg"

@@ -29,7 +29,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        default: ['Menlo', 'Roboto'],
+        default: ['Menlo-Regular'],
       },
     },
   },
