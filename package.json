@@ -27,7 +27,7 @@
     "vite-plugin-vuetify": "^2.0.4"
   },
   "dependencies": {
-    "v-gsap-nuxt": "1.1.9",
+    "v-gsap-nuxt": "1.3.14",
     "@nuxt/image": "1.8.1",
     "@nuxt/ui": "2.20.0",
     "@vueuse/core": "^12.7.0",
